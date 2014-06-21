@@ -27,7 +27,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## The function assumes the matrix to be square and invertible.
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+        ## Return a matrix that is the inverse of 'x$get()'
         if(length(x) == 0 || length(x$get()) == 0) {   #Returns the null object for emply list or empty matrix.
           message("Either empty list or empty matrix")
           r<-NULL
